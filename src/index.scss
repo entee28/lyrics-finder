@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
 $bar-color: #000;
 $ball-color: #000;
@@ -11,23 +11,23 @@ $ball-color: #000;
 
 html,
 body {
-    font-family: 'Nanum Gothic', sans-serif;
-    line-height: 1.4;
-    color: #000;
+  font-family: "Nanum Gothic", sans-serif;
+  line-height: 1.4;
+  color: #000;
 }
 
 a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 p {
-    margin: 0.35rem 0;
-    line-height: 1.7;
+  margin: 0.35rem 0;
+  line-height: 1.7;
 }
 
 // Nav
@@ -54,11 +54,10 @@ p {
 
 // Loader
 .loader {
-  
   position: relative;
   width: 75px;
   height: 100px;
-  
+
   &__bar {
     position: absolute;
     bottom: 0;
@@ -66,18 +65,17 @@ p {
     height: 50%;
     background: $bar-color;
     transform-origin: center bottom;
-    box-shadow: 1px 1px 0 rgba(0,0,0,.2);
-    
-    @for $i from 1 through 5 { 
-       &:nth-child(#{$i}) {
-         left: ($i - 1) * 15px;
-         transform: scale(1,$i*.2);
-         animation: barUp#{$i} 4s infinite;
-        }
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        left: ($i - 1) * 15px;
+        transform: scale(1, $i * 0.2);
+        animation: barUp#{$i} 4s infinite;
+      }
     }
-    
   }
-  
+
   &__ball {
     position: absolute;
     bottom: 10px;
@@ -98,118 +96,118 @@ p {
     transform: translate(8px, -14px);
   }
   10% {
-    transform: translate(15px, -10px)
+    transform: translate(15px, -10px);
   }
   17% {
-    transform: translate(23px, -24px)
+    transform: translate(23px, -24px);
   }
   20% {
-    transform: translate(30px, -20px)
+    transform: translate(30px, -20px);
   }
   27% {
-    transform: translate(38px, -34px)
+    transform: translate(38px, -34px);
   }
   30% {
-    transform: translate(45px, -30px)
+    transform: translate(45px, -30px);
   }
   37% {
-    transform: translate(53px, -44px)
+    transform: translate(53px, -44px);
   }
   40% {
-    transform: translate(60px, -40px)
+    transform: translate(60px, -40px);
   }
   50% {
-    transform: translate(60px, 0)
+    transform: translate(60px, 0);
   }
   57% {
-    transform: translate(53px, -14px)
+    transform: translate(53px, -14px);
   }
   60% {
-    transform: translate(45px, -10px)
+    transform: translate(45px, -10px);
   }
   67% {
-    transform: translate(37px, -24px)
+    transform: translate(37px, -24px);
   }
   70% {
-    transform: translate(30px, -20px)
+    transform: translate(30px, -20px);
   }
   77% {
-    transform: translate(22px, -34px)
+    transform: translate(22px, -34px);
   }
   80% {
-    transform: translate(15px, -30px)
+    transform: translate(15px, -30px);
   }
   87% {
-    transform: translate(7px, -44px)
+    transform: translate(7px, -44px);
   }
   90% {
-    transform: translate(0, -40px)
+    transform: translate(0, -40px);
   }
   100% {
     transform: translate(0, 0);
   }
 }
 
-@keyframes barUp1 { 
+@keyframes barUp1 {
   0% {
-    transform: scale(1, .2);
-  }
-  40%{
-    transform: scale(1, .2);
-  }
-  50% {
-    transform: scale(1, 1);
-  }
-  90% {
-    transform: scale(1,1);
-  }
-  100% {
-    transform: scale(1,.2);
-  }
-}
-@keyframes barUp2 { 
-  0% {
-    transform: scale(1, .4);
+    transform: scale(1, 0.2);
   }
   40% {
-    transform: scale(1, .4);
+    transform: scale(1, 0.2);
   }
   50% {
-    transform: scale(1, .8);
+    transform: scale(1, 1);
   }
   90% {
-    transform: scale(1, .8);
+    transform: scale(1, 1);
   }
   100% {
-    transform: scale(1, .4);
+    transform: scale(1, 0.2);
   }
 }
-@keyframes barUp3 { 
+@keyframes barUp2 {
   0% {
-    transform: scale(1, .6);
-  }
-  100% {
-    transform: scale(1, .6);
-  }
-}
-@keyframes barUp4 { 
-  0% {
-    transform: scale(1, .8);
+    transform: scale(1, 0.4);
   }
   40% {
-    transform: scale(1, .8);
+    transform: scale(1, 0.4);
   }
   50% {
-    transform: scale(1, .4);
+    transform: scale(1, 0.8);
   }
   90% {
-    transform: scale(1, .4);
+    transform: scale(1, 0.8);
   }
   100% {
-    transform: scale(1, .8);
+    transform: scale(1, 0.4);
   }
 }
-@keyframes barUp5 { 
+@keyframes barUp3 {
+  0% {
+    transform: scale(1, 0.6);
+  }
+  100% {
+    transform: scale(1, 0.6);
+  }
+}
+@keyframes barUp4 {
+  0% {
+    transform: scale(1, 0.8);
+  }
+  40% {
+    transform: scale(1, 0.8);
+  }
+  50% {
+    transform: scale(1, 0.4);
+  }
+  90% {
+    transform: scale(1, 0.4);
+  }
+  100% {
+    transform: scale(1, 0.8);
+  }
+}
+@keyframes barUp5 {
   0% {
     transform: scale(1, 1);
   }
@@ -217,12 +215,118 @@ p {
     transform: scale(1, 1);
   }
   50% {
-    transform: scale(1, .2);
+    transform: scale(1, 0.2);
   }
   90% {
-    transform: scale(1, .2);
+    transform: scale(1, 0.2);
   }
   100% {
     transform: scale(1, 1);
+  }
+}
+
+// Tracks
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Track
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  position: relative;
+  background: #333;
+  width: 400px;
+  height: 33rem;
+  border-radius: 6px;
+  padding: 2rem;
+  color: #aaa;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  &__image-container {
+    margin: -2rem -2rem 1rem -2rem;
+  }
+
+  &__line {
+    opacity: 0;
+    animation: LineFadeIn 0.8s 0.8s forwards ease-in;
+  }
+
+  &__image {
+    opacity: 0;
+    animation: ImageFadeIn 0.8s 1.4s forwards;
+  }
+
+  &__title {
+    color: white;
+    margin-top: 0;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+  }
+
+  &__content {
+    margin-top: -1rem;
+    opacity: 0;
+    animation: ContentFadeIn 0.8s 1.6s forwards;
+  }
+
+  &__svg {
+    position: absolute;
+    left: 0;
+    top: 115px;
+  }
+}
+
+@keyframes LineFadeIn {
+  0% {
+    opacity: 0;
+    d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 ");
+    stroke: #fff;
+  }
+  50% {
+    opacity: 1;
+    d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300");
+    stroke: #888bff;
+  }
+  100% {
+    opacity: 1;
+    d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400");
+    stroke: #545581;
+  }
+}
+
+@keyframes ContentFadeIn {
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ImageFadeIn {
+  0% {
+    transform: translate(-0.5rem, -0.5rem) scale(1.05);
+    opacity: 0;
+    filter: blur(2px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
   }
 }
