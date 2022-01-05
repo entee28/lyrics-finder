@@ -13,14 +13,16 @@ const Tracks = () => {
                 } else {
                     console.log(track_list);
                     return (
-                        <>
-                          <h3>{heading}</h3>
-                           <div className="grid-col-2">
-                               {track_list.map(item => (
-                                   <Track key={item.track.track_id} track={item.track}/>
-                               ))}
-                           </div>
-                        </>
+                        <div className='tracks'>
+                            <div className='tracks-container'>
+                                <h3 className='heading'>{heading}</h3>
+                                <div className="grid-col-3">
+                                    {track_list.map(item => (
+                                        <Track key={item.track.track_id} track={item.track} />
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
                     )
                 }
             }}

@@ -15,8 +15,8 @@ const Track = ({ track }) => {
             </svg>
 
             <div className="card__content">
-                <h3 className="card__title">{track.artist_name}</h3>
-                <p><strong>Track:</strong> {track.track_name}</p>
+                <h3 className="card__title">{track.track_name}</h3>
+                <p>{track.artist_name}</p>
                 <p><strong>Album:</strong> {track.album_name}</p>
             </div>
         </div>
